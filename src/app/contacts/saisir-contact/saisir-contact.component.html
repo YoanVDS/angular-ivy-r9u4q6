@@ -1,0 +1,10 @@
+<p>Saisie contact</p>
+
+<form [formGroup]="contactForm">
+  <label>Nom : <input type="text" formControlName="nom" /></label>
+  <br />
+  <label>Tel : <input type="text" formControlName="tel" /></label>
+
+  <button (click)="addContact()">Ajouter</button>
+</form>
+<app-liste></app-liste>
